@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untamed Landing Page</title>
+    <style>
+
+        body {
+     background-color: #f7f7f7;
+    font-family: A sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 0px;
+    box-shadow: 0 0 6px 6px white;
+}
+
+h1{
+    font-weight: 700;
+        font-size: 96px;
+        line-height: 1;
+        margin:30px 0;
+        text-shadow: 5px 10px 10px rgba(107, 98, 98, 0.75), -3px 10px 12px rgba(112, 105, 105, 0.75);
+}
+h2{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1.5;
+        margin: 0;
+        letter-spacing: 5px;
+        opacity: 0.5;
+        text-transform: uppercase;
+      }
+p{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        opacity: 0.7;
+        text-align: center;
+      }
+
+.hero {
+    background-color: #f7f7f7;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.responsive-image{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 6px 6px white;
+}
+.responsive-main-image{
+width: 850px;
+height: 1300px;
+box-shadow: 0 0 6px 6px white;
+}
+.image-fluid{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 6px 6px white;
+}
+.hero .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 5px 10px 10px rgba(107, 98, 98, 0.75), -3px 10px 12px rgba(112, 105, 105, 0.75);
+}
+
+.hero-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 6px 6px white;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.facts {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.facts ul {
+    list-style-type:circle;
+    padding: 0;
+}
+.facts li {
+    margin-bottom: 0px;
+}
+
+.personal-anecdote {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.personal-anecdote img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom:0px;
+}
+
+.personal-anecdote p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.quotes-testimony {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    background: rgba(255, 255, 255,0.1);
+    padding: 10px;
+    box-shadow: 0 0 13px 21px rgba(0, 0, 0, 0, 0.5);
+}
+
+.quotes-testimony p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.testimonials{
+    box-shadow: 0 0 6px 6px white;
+}
+.qoutes{
+    box-shadow: 0 0 6px 6px white;
+}
+
+.call-to-action{
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.call-to-action button {
+    display: inline-block;
+        padding: 20px;
+        background-color: #a7a4a4;
+        color: black;
+        text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      box-shadow: 0 0 6px 6px rgb(219, 217, 217);
+}
+
+.call-to-action button:hover {
+    background-color: #656866;
+    color:white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+footer{
+        background-image: linear-gradient(rgba(14, 13, 13, 0.9), rgba(15, 15, 15, 0.9) ), url("https://medinabookshop.com/wp-content/uploads/2021/01/Untamed-scaled.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+      }
+      footer p{
+        color:white;
+        font-weight: 400;
+        line-height: 20px;
+        font-size: 18px;
+        padding: 5px 0;
+      }
+
+@media (max-width:600px){
+    h1{
+          font-size: 40px;
+        }
+        h2{
+          font-size: 15px;
+        }
+        header{
+          padding: 25px;
+        }
+        section{
+          padding: 10px;
+        }
+    .deco-images{
+          display: none;
+        }
+        main,
+        .hero{
+            display: block;
+        }
+        .quotes-testimony {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+        }
+        .hero .overlay {
+    position: relative;
+    color: black;
+    opacity: 0.5;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .responsive-main-image{
+width: 100%;
+height: auto;
+    }
+    footer p{
+        font-size: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Untamed: A Memoir</h1>
+        <p>by Glennon Doyle</p>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="https://buildingourstory.com/wp-content/uploads/2021/02/untamed-by-glennon-doyle-scaled.jpg" alt="image of book decoration" class="responsive-main-image"/>
+            <div class="hero-image">
+                <p>Untamed is a powerful memoir that has left a lasting impact on my life.
+                    The memoir shares the story of Glennon Doyle's journey towards self-discovery
+                    and empowerment. With raw emotion and unbridled honesty, Glennon recounts her struggles with addiction,
+                     motherhood, and marriage, and how she found the courage to break free from societal expectations and 
+                     embrace her true self. Her story has inspired me to embrace my own vulnerabilities and live a more 
+                      authentic life.The book is a powerful reminder that we are all wild and untamed, and that we have
+                    the power to break free from the societal expectations and constraints that hold us back.
+                     It's a call to embrace our true selves and live life on our own terms.
+                   I love how Glennon weaves together stories from her own life with universal truths and
+                    lessons that are relatable to everyone. Her writing is both entertaining and thought-provoking, 
+                    making it a truly unforgettable read.</p>
+            <img src="https://m.media-amazon.com/images/S/aplus-media/vc/37dbfedd-b397-4169-bba8-448ffefe1fcd.__CR90,176,900,900_PT0_SX300_V1___.jpg" alt="Untamed Book Cover"/>
+          </div>
+            <div class="overlay">
+                <h5>A powerful memoir of Love, Life and Triumph</h5>
+            </div>
+        <div class="deco-images">
+            <img src="https://cdn.notonthehighstreet.com/fs/2f/11/fa91-2c65-4ae4-8a92-70e1bf150b1e/original_book-rack.jpg" alt="image of book decoration" class="responsive-image"/>
+            <img src="https://cdn.notonthehighstreet.com/fs/2f/11/fa91-2c65-4ae4-8a92-70e1bf150b1e/original_book-rack.jpg" alt="image of book decoration" class="responsive-image"/>
+            <img src="https://cdn.notonthehighstreet.com/fs/2f/11/fa91-2c65-4ae4-8a92-70e1bf150b1e/original_book-rack.jpg" alt="image of book decoration" class="responsive-image"/>
+            <img src="https://cdn.notonthehighstreet.com/fs/2f/11/fa91-2c65-4ae4-8a92-70e1bf150b1e/original_book-rack.jpg" alt="image of book decoration" class="responsive-image"/>
+            <img src="https://cdn.notonthehighstreet.com/fs/2f/11/fa91-2c65-4ae4-8a92-70e1bf150b1e/original_book-rack.jpg" alt="image of book decoration" class="responsive-image"/>
+            <img src="https://cdn.notonthehighstreet.com/fs/2f/11/fa91-2c65-4ae4-8a92-70e1bf150b1e/original_book-rack.jpg" alt="image of book decoration" class="responsive-image"/>
+            <img src="https://cdn.notonthehighstreet.com/fs/2f/11/fa91-2c65-4ae4-8a92-70e1bf150b1e/original_book-rack.jpg" alt="image of book decoration" class="responsive-image"/>
+            <img src="https://cdn.notonthehighstreet.com/fs/2f/11/fa91-2c65-4ae4-8a92-70e1bf150b1e/original_book-rack.jpg" alt="image of book decoration" class="responsive-image"/>
+            
+        </div>
+        </section>
+        <section class="facts">
+            <h2>Interesting Facts about Untamed</h2>
+            <ul>
+                <li>Untamed was a New York Times bestseller</li>
+                <li>Glennon Doyle wrote the book during a 40-day solo road trip across the country</li>
+                <li>It was during a difficult time in her life, struggling with addiction and her decision to leave her marriage</li>
+                <li>The book has been translated into several languages</li>
+                <li>Glennon's husband, designed the cover art for the book</li>
+            </ul>
+        </section>
+        <section class="personal-anecdote">
+            <h2>My Personal Connection to Untamed</h2>
+            <p>I first discovered Untamed during a difficult time in my life, when I was struggling to find my own sense of purpose and identity. Glennon's words resonated deeply with me, and her story inspired me to embrace my own vulnerabilities and imperfections. The book became a source of comfort and strength for me, and I have since read it multiple times, always finding new nuggets of wisdom and insight.</p>
+            <img src="https://vitality-vixens.com/wp-content/uploads/2020/11/IMG_7508-600x850.jpg" alt="Untamed Book" class="image-fluid">
+        </section>
+<section class="quotes-testimony">
+    <div class="qoutes">
+            <h2>Quotes from Untamed</h2>
+            <p>"I don't want to be a good girl. I want to be a wild one."</p>
+            <p>"The only thing more exhausting than trying to be perfect is pretending to be perfect."</p>
+            <p>"I am not a mess. I am a person with a messy, beautiful life."</p>
+            <p> "We are alive only to the degree to which we are willing to be annihilated."</p>
+            <p>"Love is the opposite of control. Love demands trust."</p>
+    </div>
+        <div class="testimonials">
+            <h2>What other readers are saying about Untamed</h2>
+            <p>"I couldn't put this book down. Glennon's writing is captivating and her story is inspiring. I felt like she was speaking directly to me and my own struggles."</p>
+            <p>"Untamed has changed my life. I never knew I needed this book until I read it, and now I can't without it."</p>
+            <p>"Glennon's vulnerability and honesty are a breath of fresh air. This book is a must-read for anyone looking to live a more authentic life."</p>
+        </div>
+        </section>
+        <section class="call-to-action">
+            <h2>Join the Untamed Community</h2>
+            <p>Connect with other readers who have been inspired by Untamed and share your own story of self-discovery and empowerment. Join the Untamed Book Club on Facebook and participate in discussions, share your thoughts and experiences, and get exclusive content from Glennyle and other members of the community.</p>
+            <button><a href="https://www.facebook.com/groups/586488391938422/">Join Now</a></button>
+        </section>
+    </main>
+    <footer>
+        <p>Thankyou for visiting my page</p>
+        <p>&2023 ZAENICKY. Designed and built by Emmah Zanele Mpofu and 
+          <a href="https://github.com/Zaemah/Landing-Pages">open sourced on Github.</a></p>
+          <p>Site map | Privacy policy</p>
+      </footer>
+</body>
+</html>
